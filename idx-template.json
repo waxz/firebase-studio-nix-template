@@ -11,7 +11,8 @@
       "type": "enum",
       "default": "deno",
       "options": {
-        "deno": "deno starter"
+        "deno": "deno starter",
+        "fastapi" : "fastapi starter"
       }
     }
   ]
