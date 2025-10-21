@@ -3,10 +3,8 @@
   channel = "stable-24.05"; # or "unstable"
   # Use https://search.nixos.org/packages to find packages
   packages = [
-    pkgs.python3
-    pkgs.python311Packages.pip
-    pkgs.python311Packages.fastapi
-    pkgs.python311Packages.uvicorn
+    pkgs.python3 
+    pkgs.uv
   ];
   # Sets environment variables in the workspace
   env = {};
@@ -27,7 +25,7 @@
       # Runs when a workspace is first created with this `dev.nix` file
       onCreate = {
         install =
-          "python -m venv .venv && source .venv/bin/activate &&  pip install -r requirements.txt";
+          "uv venv .venv && source .venv/bin/activate && uv pip install -r requirements.txt";
         # Open editors for the following files by default, if they exist:
         default.openFiles = [ "app.py" ];
       };
