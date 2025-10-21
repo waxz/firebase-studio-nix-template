@@ -1,0 +1,18 @@
+{
+  "name": "Nix Play Ground",
+  "description": "Dev on Nix",
+  "categories": ["AI & ML"],
+  "icon": "https://www.gstatic.com/monospace/231128/logo_gemini_512.png",
+  "publisher": "NXDEV LLC",
+  "params": [
+    {
+      "id": "environment",
+      "name": "Environment",
+      "type": "enum",
+      "default": "deno",
+      "options": {
+        "deno": "deno starter"
+      }
+    }
+  ]
+}
