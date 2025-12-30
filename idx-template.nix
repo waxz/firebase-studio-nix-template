@@ -73,7 +73,7 @@
 
     # Check Python option
     if [ "${toString python}" = "1" ] || [ "${toString python}" = "true" ]; then
-      PACKAGES="$PACKAGES pkgs.python3 pkgs.uv"
+      PACKAGES="$PACKAGES pkgs.python3"
       EXTENSIONS="$EXTENSIONS \"ms-python.python\" \"rangav.vscode-thunder-client\""
       echo "Adding: python"
     fi
