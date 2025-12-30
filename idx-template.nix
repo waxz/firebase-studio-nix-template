@@ -4,7 +4,7 @@
   rust ? true,
   deno ? true,
   wrangler ? true,
-  python ? false,    # ✅ Added missing parameter
+  python ? false,
   ... 
 }: {
   packages = [
@@ -60,7 +60,7 @@
 
     # Check Rust option
     if [ "${toString rust}" = "1" ] || [ "${toString rust}" = "true" ]; then
-      PACKAGES="$PACKAGES pkgs.rustup pkgs.cargo"
+      PACKAGES="$PACKAGES pkgs.rustup pkgs.cargo pkgs.clang"
       EXTENSIONS="$EXTENSIONS \"Swellaby.rust-pack\""
       echo "Adding: rust"
     fi
