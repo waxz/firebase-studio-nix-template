@@ -67,7 +67,7 @@
 
     # Check Wrangler option
     if [ "${toString wrangler}" = "1" ] || [ "${toString wrangler}" = "true" ]; then
-      PACKAGES="$PACKAGES pkgs.wrangler"
+      PACKAGES="$PACKAGES pkgs.wrangler pkgs.worker-build"
       echo "Adding: wrangler"
     fi
 
