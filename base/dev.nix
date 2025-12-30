@@ -14,12 +14,13 @@
     previews = {
       enable = true;
     };
-  };
     workspace = {
       # Runs when a workspace is first created with this `dev.nix` file
       onCreate = {
 
-    }
-  }
+      };
+    };
+  };
+
 
 }
