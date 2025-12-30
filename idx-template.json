@@ -12,8 +12,46 @@
       "default": "deno",
       "options": {
         "deno": "deno starter",
-        "fastapi" : "fastapi starter"
+        "fastapi" : "fastapi starter",
+        "git" : "git clone"
       }
-    }
+    },
+    {
+      "id": "rust",
+      "name":"Install Rust",
+      "type" : "boolean",
+      "default" : true,
+      "required": true
+    },
+    {
+      "id": "deno",
+      "name":"Install Deno",
+      "type" : "boolean",
+      "default" : true,
+      "required": true
+    },
+    {
+      "id": "wrangler",
+      "name":"Install wrangler",
+      "type" : "boolean",
+      "default" : true,
+      "required": true
+    },
+    
+    {
+      "id": "git_repo",
+      "name":"Git clone",
+      "type" : "text",
+      "default" : "",
+      "required": false
+    },
+    
+    {
+      "id": "init.sh",
+      "name":"Run init.sh",
+      "type" : "text",
+      "default" : "echo init...",
+      "required": false
+    },
   ]
 }
