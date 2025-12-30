@@ -25,6 +25,13 @@
       "required": true
     },
     {
+      "id": "python",
+      "name":"Install Python",
+      "type" : "boolean",
+      "default" : true,
+      "required": true
+    },
+    {
       "id": "deno",
       "name":"Install Deno",
       "type" : "boolean",
