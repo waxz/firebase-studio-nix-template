@@ -44,7 +44,7 @@
     chmod -R u+w "$out"
 
     # ==================================
-    # 2. Build packages list based on options
+    # 2. Build kages list based on options
     # ==================================
     
     # ✅ Fixed: removed pkgs.apt (doesn't exist)
@@ -67,7 +67,7 @@
 
     # Check Wrangler option
     if [ "${toString wrangler}" = "1" ] || [ "${toString wrangler}" = "true" ]; then
-      PACKAGES="$PACKAGES pkgs.nodePackages.wrangler"
+      PACKAGES="$PACKAGES pkgs.wrangler"
       echo "Adding: wrangler"
     fi
 
