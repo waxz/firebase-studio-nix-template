@@ -46,9 +46,9 @@
     # ==================================
     # 2. Build kages list based on options
     # ==================================
-    
-    # ✅ Fixed: removed pkgs.apt (doesn't exist)
-    PACKAGES="pkgs.yarn pkgs.cloudflared"
+
+
+    PACKAGES="pkgs.yarn pkgs.cloudflared pkgs.pkg-config pkgs.openssl.dev pkgs.htop pkgs.sudo"
     EXTENSIONS=""
 
     # Check Deno option
