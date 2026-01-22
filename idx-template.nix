@@ -48,7 +48,7 @@
     # ==================================
 
 
-    PACKAGES="pkgs.yarn pkgs.cloudflared pkgs.pkg-config pkgs.openssl.dev pkgs.htop pkgs.sudo"
+    PACKAGES="pkgs.yarn pkgs.cloudflared pkgs.pkg-config pkgs.openssl.dev pkgs.htop pkgs.sudo pkgs.worker-build pkgs.nano"
     EXTENSIONS=""
 
     # Check Deno option
