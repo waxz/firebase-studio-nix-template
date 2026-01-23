@@ -105,11 +105,11 @@ if [ -f "\$DEV_NIX" ]; then
     echo "Warning: Could not find extensions line in dev.nix"
   fi
   
-  # Add onCreate tunnel command
-  if grep -q "onCreate = {" "\$DEV_NIX"; then
-    sed -i '/onCreate = {/a \        start-tunnel = "cloudflared tunnel --url http://localhost";' "\$DEV_NIX"
+  # Add onStart tunnel command
+  if grep -q "onStart = {" "\$DEV_NIX"; then
+    sed -i '/onStart = {/a \        start-tunnel = "cloudflared tunnel --url http://localhost";' "\$DEV_NIX"
   else
-    echo "Warning: Could not find onCreate line in dev.nix"
+    echo "Warning: Could not find onStart line in dev.nix"
   fi
 fi
 SCRIPT
