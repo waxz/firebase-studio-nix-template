@@ -17,6 +17,10 @@
       # Runs when a workspace is first created with this `dev.nix` file
       onCreate = {
       };
+      # Runs when a workspace starts
+      onStart = {
+      };
+
     };
   };
 
